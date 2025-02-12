@@ -1,0 +1,236 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: #FFCDB2;
+    color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.containerL{
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+}
+.logintext {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 36px; 
+    font-weight: 500;
+    color: #333; 
+    letter-spacing: 3px; 
+    margin-bottom: 20px; 
+    position: relative; 
+   text-align: center;
+   margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+.forms{
+    display: flex;
+    justify-content: center;
+   
+}
+.username{
+    
+}
+.username label{
+  margin: 10px;    
+}
+.username input{
+    width: 80%;
+    height: 25px;
+    margin: 15px 10px;
+}
+.password {
+
+}
+.password label{
+  margin: 10px;    
+}
+.password input{
+    width: 80%;
+    height: 25px;
+    margin: 15px 10px;
+}
+
+.submitbtn input {
+    font-size: 17px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: dodgerblue;
+    color: white;
+    border-radius: 4px;
+    margin-left: 150px;
+    margin-top:10px;
+   
+   }
+   
+   .submitbtn input:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+   }
+   
+   .submitbtn input:active {
+    transform: translate(0em, 0.2em);
+   }
+   
+   .noaccount {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.noaccount a {
+    color: #A35C7A; 
+    font-weight: bold;
+    text-decoration: none; 
+    transition: color 0.3s ease-in-out;
+}
+.noaccount a:hover {
+    color: #7C3A5E; 
+    text-decoration: underline; 
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: #FFCDB2;
+    color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.containerL {
+    width: 400px;
+    height: auto;
+    padding: 30px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.containerL:hover {
+    box-shadow: 15px 15px 30px #ffb3b3, -15px -15px 30px #ffffff;
+}
+
+.logintext {
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 10px 0 30px 0;
+    font-size: 28px;
+    font-weight: 800;
+    
+    border-bottom: 2px solid #A35C7A;
+}
+
+.forms {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.username, .password {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.username label, .password label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form-group input:hover, .form-group input:focus {
+    border-color: #A35C7A;
+    box-shadow: 0 0 5px rgba(163, 92, 122, 0.3);
+}
+.username input, .password input {
+    width: 80%;
+    height: 35px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.username input:focus, .password input:focus {
+    border-color: #A35C7A;
+}
+
+.submitbtn button{
+    font-size: 17px;
+    padding: 12px 20px;
+    background: #A35C7A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease-in-out, transform 0.1s ease;
+}
+
+.submitbtn button:hover {
+    background: linear-gradient(90deg, #E5989B 0%,  #B5828C 100%);
+}
+
+.submitbtn button:active {
+    transform: translateY(2px);
+}
+
+.noaccount {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 15px;
+}
+
+.noaccount a {
+    color: #A35C7A;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.2s ease;
+}
+
+.noaccount a:hover {
+    color: #7C3A5E;
+    text-decoration: underline;
+}
